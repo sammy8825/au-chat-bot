@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import "./assets/css/style.css"
 
 
-const socket = io("http://localhost:4000");
+const socket = io("https://au-chat-bot.onrender.com");
 
 function App() {
   const [messages, setMessages] = useState([]);
