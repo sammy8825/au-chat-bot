@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    orgin: "https://neon-fox-8a0015.netlify.app/",
+    orgin: "https://au-chat-bot.vercel.app/",
     methods: ["GET", "POST"],
   }
 });
