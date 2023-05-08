@@ -5,6 +5,8 @@ const { Server } = require("socket.io");
 
 const faq = require("./data.js");
 
+const PORT = process.env.PORT || 4000;
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -50,6 +52,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(4000, () => {
-  console.log("listening on *:4000");
+server.listen(PORT, () => {
+  console.log(`listening on ${PORT}`);
 });
