@@ -1,0 +1,110 @@
+.chat-bot {
+  display: flex;
+}
+
+.about {
+  width: 25%;
+  color: #f3f3f3;
+  background-color: #751c1c;
+
+  padding: 15px;
+  box-sizing: border-box;
+
+  height: 100vh;
+}
+
+.chat-area {
+  width: 75%;
+
+  padding: 0 25px;
+}
+
+ul {
+  height: 85vh;
+
+  overflow-y: scroll;
+}
+
+.chats {
+  margin: 15px 0;
+
+  display: flex;
+  width: 100%;
+}
+
+.chats:nth-child(even) {
+  justify-content: end;
+}
+
+.chats:nth-child(odd) {
+  justify-content: start;
+}
+
+li {
+  list-style: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.user,
+.me {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  padding: 1.55% 1.5%;
+  border-radius: 10px;
+
+  width: fit-content;
+}
+
+.user {
+  color: #751c1c;
+  background-color: #e9e6e6;
+
+  max-width: 40%;
+}
+
+.me {
+  color: #f3f3f3;
+  background-color: #751c1c;
+
+  max-width: 40%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 0.75%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  width: 15%;
+  font-size: 20px;
+}
+
+/* scroll bar design */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
